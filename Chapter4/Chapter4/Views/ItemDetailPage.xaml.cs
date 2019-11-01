@@ -3,10 +3,10 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using Chapter4.Models;
-using Chapter4.ViewModels;
+using Chapter5.Models;
+using Chapter5.ViewModels;
 
-namespace Chapter4.Views
+namespace Chapter5.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer

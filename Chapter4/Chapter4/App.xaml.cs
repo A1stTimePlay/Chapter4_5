@@ -1,10 +1,10 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Chapter4.Services;
-using Chapter4.Views;
+using Chapter5.Services;
+using Chapter5.Views;
 
-namespace Chapter4
+namespace Chapter5
 {
     public partial class App : Application
     {

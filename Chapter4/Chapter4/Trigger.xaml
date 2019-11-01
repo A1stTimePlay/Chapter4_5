@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:my="clr-namespace:Chapter5"
+             mc:Ignorable="d"
+             x:Class="Chapter5.Trigger">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Style.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="true">
+                        <Setter Property="BackgroundColor" Value="Yellow" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label x:Name="label" Text="{Binding Text,Source={x:Reference entry}}"/>
+        <Entry x:Name="entry">
+            <Entry.Triggers>
+                <DataTrigger TargetType="Entry" Binding="{Binding Text.Length,Source={x:Reference label}, Converter={my:IsEmptyStringConverter}}" Value="true">
+                    <Setter Property="TextColor" Value="Green"/>
+                </DataTrigger>
+                <EventTrigger Event="PropertyChanged">
+                    <my:EntryTextLogger/>
+                </EventTrigger>
+                <MultiTrigger TargetType="Entry">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Text.Length,Source={x:Reference label},Converter= {my:IsEmptyStringConverter}}" Value="true"/>
+                        <PropertyCondition Property="IsFocused" Value="true"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="FontSize" Value="Large"/>
+                </MultiTrigger>
+            </Entry.Triggers>
+        </Entry>
+    </StackLayout>
+</ContentPage>

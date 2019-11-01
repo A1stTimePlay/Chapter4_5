@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Chapter4.Services
+namespace Chapter5.Services
 {
     public interface IDataStore<T>
     {

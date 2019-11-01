@@ -1,8 +1,8 @@
 ﻿using System;
 
-using Chapter4.Models;
+using Chapter5.Models;
 
-namespace Chapter4.ViewModels
+namespace Chapter5.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {

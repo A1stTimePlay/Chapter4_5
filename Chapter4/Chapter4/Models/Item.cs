@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Chapter4.Models
+namespace Chapter5.Models
 {
     public class Item
     {

@@ -1,11 +1,11 @@
-﻿using Chapter4.Models;
+﻿using Chapter5.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Chapter4.Views
+namespace Chapter5.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer

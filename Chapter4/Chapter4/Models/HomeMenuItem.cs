@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chapter4.Models
+namespace Chapter5.Models
 {
     public enum MenuItemType
     {

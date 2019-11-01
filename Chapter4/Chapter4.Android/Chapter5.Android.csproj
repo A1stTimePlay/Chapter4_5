@@ -87,9 +87,9 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chapter4\Chapter4.csproj">
-      <Project>{FAFC872F-451B-4E23-8EF8-7E0971FD772E}</Project>
-      <Name>Chapter4</Name>
+    <ProjectReference Include="..\Chapter4\Chapter5.csproj">
+      <Project>{958F0391-7676-481F-9CCD-4B1B752898E6}</Project>
+      <Name>Chapter5</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
